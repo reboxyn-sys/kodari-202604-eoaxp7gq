@@ -1,0 +1,114 @@
+debug: false
+smp-started: false
+
+starting-tokens: 2
+max-tokens: 5
+min-tokens: -3
+
+token-kill-reward: 1
+token-death-penalty: 1
+
+abilities:
+  strength:
+    prideful-slam:
+      cooldown: 60
+      launch-height: 20
+      slowness-duration: 400
+      damage: 6.0
+    kratos-intervention:
+      cooldown: 120
+      duration: 500
+      strength-level: 3
+      speed-level: 1
+    warrior-rage:
+      permanent-strength: 1
+      hit-strength: 2
+      hit-duration: 60
+
+  endurance:
+    unwavering-endurance:
+      cooldown: 60
+      duration: 700
+      extra-hearts: 20
+    atlas-dominion:
+      cooldown: 120
+      duration: 500
+      resistance-level: 5
+    titan-skin:
+      permanent-resistance: 1
+      damage-reduction: 0.20
+
+  speed:
+    sonic-boom:
+      cooldown: 60
+      max-charge-time: 400
+      damage: 12.0
+    hermes-adrenaline:
+      cooldown: 120
+      duration: 700
+      speed-level: 4
+      haste-level: 3
+    swift-reflexes:
+      permanent-speed: 2
+      dodge-chance: 0.15
+
+  life:
+    life-drain:
+      cooldown: 60
+      min-damage: 4.0
+      max-damage: 12.0
+      range: 10.0
+    gaia-produce:
+      cooldown: 120
+      duration: 500
+      absorption-bonus: 4
+    eternal-growth:
+      permanent-regeneration: 2
+      healing-multiplier: 1.5
+
+  thunder:
+    zeus-wrath:
+      cooldown: 60
+      duration: 400
+      strike-radius: 15.0
+      damage: 8.0
+      strike-interval: 20
+    thunder-assertion:
+      cooldown: 90
+      duration: 400
+      damage-multiplier: 2.0
+      chain-radius: 5.0
+      chain-damage: 6.0
+    static-charge:
+      permanent-speed: 1
+      lightning-chance: 0.25
+      lightning-damage: 6.0
+
+mythic-items:
+  zeus-thunderbolt:
+    hit-count: 3
+    lightning-damage: 8.0
+  mythical-dagger:
+    freeze-chance: 0.30
+    freeze-hit-count: 10
+    freeze-duration: 100
+  ancient-armor:
+    helmet-resistance: 1
+    chestplate-hearts: 10
+    leggings-speed: 2
+
+particles:
+  enabled: true
+  strength-color: RED
+  endurance-color: GRAY
+  speed-color: CYAN
+  life-color: GREEN
+  thunder-color: YELLOW
+
+sounds:
+  enabled: true
+  ability-use: ENTITY_ENDER_DRAGON_GROWL
+  token-gain: ENTITY_PLAYER_LEVELUP
+  token-loss: ENTITY_VILLAGER_NO
+  blessing-received: UI_TOAST_CHALLENGE_COMPLETE
+  reroll: BLOCK_BEACON_ACTIVATE

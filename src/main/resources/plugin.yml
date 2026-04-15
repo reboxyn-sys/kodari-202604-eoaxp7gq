@@ -1,0 +1,51 @@
+name: BlessingsSMP
+version: 1.0.0
+main: com.blessings.smp.BlessingsSMP
+api-version: '1.13'
+author: BlessingsTeam
+description: Advanced SMP plugin with blessings, abilities, and mythical items
+
+commands:
+  smp:
+    description: Start the SMP and assign blessings
+    usage: /smp start
+    permission: blessings.admin
+  blessing:
+    description: View your blessing information
+    usage: /blessing [give/info]
+    aliases: [blessings, bl]
+  tokens:
+    description: View your token count
+    usage: /tokens
+  trust:
+    description: Manage trusted players
+    usage: /trust <add/remove/list> [player]
+  withdraw:
+    description: Withdraw tokens as items
+    usage: /withdraw <amount>
+  givereroll:
+    description: Give reroll items to a player
+    usage: /givereroll <player> <amount>
+    permission: blessings.admin
+  givetoken:
+    description: Give tokens to a player
+    usage: /givetoken <player> <amount>
+    permission: blessings.admin
+  givemythic:
+    description: Give mythical items to a player
+    usage: /givemythic <player> <item>
+    permission: blessings.admin
+  cooldown:
+    description: Reset your cooldowns
+    usage: /cooldown
+    permission: blessings.admin
+  blessingsreload:
+    description: Reload the plugin configuration
+    usage: /blessingsreload
+    permission: blessings.admin
+    aliases: [breload]
+
+permissions:
+  blessings.admin:
+    description: Access to all admin commands
+    default: op
